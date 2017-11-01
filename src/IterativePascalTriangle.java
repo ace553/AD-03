@@ -5,12 +5,12 @@ public class IterativePascalTriangle implements PascalTriangle
 	int operations = 0;
 
 	@Override
-	public int[] line(int n)
+	public long[] line(int n)
 	{
 		operations+=4;
-		int[] line = new int[n];
-		int[] lineNext = new int[n];
-		int[] temp = null;
+		long[] line = new long[n];
+		long[] lineNext = new long[n];
+		long[] temp = null;
 		line[0] = 1;
 
 		int curr = 1;

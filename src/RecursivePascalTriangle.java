@@ -15,13 +15,13 @@ public class RecursivePascalTriangle implements PascalTriangle
 	}
 	
 	@Override
-	public int[] line(int n)
+	public long[] line(int n)
 	{
 		operations++;
-		return nextLineRecusive(new int[] { 1 }, n);
+		return nextLineRecusive(new long[] { 1 }, n);
 	}
 
-	private int[] nextLineRecusive(int[] line, int n)
+	private long[] nextLineRecusive(long[] line, int n)
 	{
 		operations++;
 		if (line.length == n)
@@ -31,7 +31,7 @@ public class RecursivePascalTriangle implements PascalTriangle
 		}
 
 		operations+=3;
-		int[] next = new int[line.length + 1];
+		long[] next = new long[line.length + 1];
 		next[0] = 1;
 		next[next.length - 1] = 1;
 		

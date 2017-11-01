@@ -2,7 +2,7 @@
 public interface PascalTriangle
 {
 
-	public int[] line(int n);
+	public long[] line(int n);
 
 	public int getOperations();
 
